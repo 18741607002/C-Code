@@ -1,0 +1,27 @@
+git init  #创建git版本管理的本地仓库
+git status 查看仓库中所有的文件夹和文件的状态
+git add 文件名  让git管理单独的文件夹或者文件
+git add .  管理所有文件和文件夹
+配置用户名和邮箱
+$ git config --global user.name <用户名>
+$ git config --global user.email <邮箱地址>
+例如：
+$ git config --global user.name "吴超"
+$ git config --global user.email "1069696250@qq.com"
+git commit -m '描述信息'
+例如： git commit -m 'v1版本'
+管理之后进行二次开发，修改一些文件之后
+git add supercrm
+git commit -m 'v2版本'
+查看日志
+git log
+1 进入要管理的目录
+2 git init初始化  即：让git管理我们当前的文件夹
+3 git status 检测当前文件夹中的文件状态
+4 三种颜色的变化
+    a 红色：新增文件或者修改的老文件 --> 执行git add .（或者单个文件或文件夹的名称）  
+    b 绿色：git已经管理起来了 --> 执行git commit -m '描述信息'
+    c 白色：生成版本了
+​
+好，之后我们会细说这几个颜色到底还有什么意义
+5 git log 查看版本记录
